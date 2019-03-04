@@ -11,7 +11,9 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
-
+    
+    @IBOutlet weak var questionLabel: WKInterfaceLabel!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -27,5 +29,25 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+    
 
+    @IBAction func buttonSay() {
+        
+        
+        let suggestiveResponse = ["In class", "Good", "Watching Movie", "Feeling Cold"]
+        
+        presentTextInputController(withSuggestions: suggestiveResponse, allowedInputMode: .plain){(results) in
+            
+            if(results != nil && results!.count > 0){
+                // 2. Write your code to process the person's response
+                
+                let userResponse = results?.first as! String
+                self.questionLabel.setText(userResponse)
+                
+            }
+            
+        }
+        
+    }
+    
 }
