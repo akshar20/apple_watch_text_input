@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B9CE88F222D693900815998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9CE88E222D693900815998 /* AppDelegate.swift */; };
+		9B9CE891222D693900815998 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9CE890222D693900815998 /* ViewController.swift */; };
+		9B9CE894222D693900815998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9CE892222D693900815998 /* Main.storyboard */; };
+		9B9CE896222D693F00815998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B9CE895222D693F00815998 /* Assets.xcassets */; };
+		9B9CE899222D693F00815998 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9CE897222D693F00815998 /* LaunchScreen.storyboard */; };
+		9B9CE89E222D694000815998 /* MyTextInput WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9B9CE89D222D693F00815998 /* MyTextInput WatchKit App.app */; };
+		9B9CE8A4222D694000815998 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9CE8A2222D694000815998 /* Interface.storyboard */; };
+		9B9CE8A6222D694000815998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B9CE8A5222D694000815998 /* Assets.xcassets */; };
+		9B9CE8AD222D694000815998 /* MyTextInput WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9B9CE8AC222D694000815998 /* MyTextInput WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9B9CE8B2222D694000815998 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9CE8B1222D694000815998 /* InterfaceController.swift */; };
+		9B9CE8B4222D694000815998 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9CE8B3222D694000815998 /* ExtensionDelegate.swift */; };
+		9B9CE8B6222D694000815998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B9CE8B5222D694000815998 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B9CE89F222D694000815998 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B9CE883222D693900815998 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B9CE89C222D693F00815998;
+			remoteInfo = "MyTextInput WatchKit App";
+		};
+		9B9CE8AE222D694000815998 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B9CE883222D693900815998 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B9CE8AB222D694000815998;
+			remoteInfo = "MyTextInput WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9B9CE8BD222D694100815998 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9B9CE8AD222D694000815998 /* MyTextInput WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9CE8C1222D694100815998 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				9B9CE89E222D694000815998 /* MyTextInput WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9B9CE88B222D693900815998 /* MyTextInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTextInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9CE88E222D693900815998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B9CE890222D693900815998 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B9CE893222D693900815998 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B9CE895222D693F00815998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B9CE898222D693F00815998 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B9CE89A222D693F00815998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B9CE89D222D693F00815998 /* MyTextInput WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyTextInput WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9CE8A3222D694000815998 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		9B9CE8A5222D694000815998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B9CE8A7222D694000815998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B9CE8AC222D694000815998 /* MyTextInput WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MyTextInput WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9CE8B1222D694000815998 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		9B9CE8B3222D694000815998 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		9B9CE8B5222D694000815998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B9CE8B7222D694000815998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B9CE888222D693900815998 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9CE8A9222D694000815998 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B9CE882222D693900815998 = {
+			isa = PBXGroup;
+			children = (
+				9B9CE88D222D693900815998 /* MyTextInput */,
+				9B9CE8A1222D694000815998 /* MyTextInput WatchKit App */,
+				9B9CE8B0222D694000815998 /* MyTextInput WatchKit Extension */,
+				9B9CE88C222D693900815998 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B9CE88C222D693900815998 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B9CE88B222D693900815998 /* MyTextInput.app */,
+				9B9CE89D222D693F00815998 /* MyTextInput WatchKit App.app */,
+				9B9CE8AC222D694000815998 /* MyTextInput WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B9CE88D222D693900815998 /* MyTextInput */ = {
+			isa = PBXGroup;
+			children = (
+				9B9CE88E222D693900815998 /* AppDelegate.swift */,
+				9B9CE890222D693900815998 /* ViewController.swift */,
+				9B9CE892222D693900815998 /* Main.storyboard */,
+				9B9CE895222D693F00815998 /* Assets.xcassets */,
+				9B9CE897222D693F00815998 /* LaunchScreen.storyboard */,
+				9B9CE89A222D693F00815998 /* Info.plist */,
+			);
+			path = MyTextInput;
+			sourceTree = "<group>";
+		};
+		9B9CE8A1222D694000815998 /* MyTextInput WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				9B9CE8A2222D694000815998 /* Interface.storyboard */,
+				9B9CE8A5222D694000815998 /* Assets.xcassets */,
+				9B9CE8A7222D694000815998 /* Info.plist */,
+			);
+			path = "MyTextInput WatchKit App";
+			sourceTree = "<group>";
+		};
+		9B9CE8B0222D694000815998 /* MyTextInput WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9B9CE8B1222D694000815998 /* InterfaceController.swift */,
+				9B9CE8B3222D694000815998 /* ExtensionDelegate.swift */,
+				9B9CE8B5222D694000815998 /* Assets.xcassets */,
+				9B9CE8B7222D694000815998 /* Info.plist */,
+			);
+			path = "MyTextInput WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B9CE88A222D693900815998 /* MyTextInput */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B9CE8C2222D694100815998 /* Build configuration list for PBXNativeTarget "MyTextInput" */;
+			buildPhases = (
+				9B9CE887222D693900815998 /* Sources */,
+				9B9CE888222D693900815998 /* Frameworks */,
+				9B9CE889222D693900815998 /* Resources */,
+				9B9CE8C1222D694100815998 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B9CE8A0222D694000815998 /* PBXTargetDependency */,
+			);
+			name = MyTextInput;
+			productName = MyTextInput;
+			productReference = 9B9CE88B222D693900815998 /* MyTextInput.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B9CE89C222D693F00815998 /* MyTextInput WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B9CE8BE222D694100815998 /* Build configuration list for PBXNativeTarget "MyTextInput WatchKit App" */;
+			buildPhases = (
+				9B9CE89B222D693F00815998 /* Resources */,
+				9B9CE8BD222D694100815998 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B9CE8AF222D694000815998 /* PBXTargetDependency */,
+			);
+			name = "MyTextInput WatchKit App";
+			productName = "MyTextInput WatchKit App";
+			productReference = 9B9CE89D222D693F00815998 /* MyTextInput WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		9B9CE8AB222D694000815998 /* MyTextInput WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B9CE8BA222D694100815998 /* Build configuration list for PBXNativeTarget "MyTextInput WatchKit Extension" */;
+			buildPhases = (
+				9B9CE8A8222D694000815998 /* Sources */,
+				9B9CE8A9222D694000815998 /* Frameworks */,
+				9B9CE8AA222D694000815998 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MyTextInput WatchKit Extension";
+			productName = "MyTextInput WatchKit Extension";
+			productReference = 9B9CE8AC222D694000815998 /* MyTextInput WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B9CE883222D693900815998 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = MacStudent;
+				TargetAttributes = {
+					9B9CE88A222D693900815998 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					9B9CE89C222D693F00815998 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					9B9CE8AB222D694000815998 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 9B9CE886222D693900815998 /* Build configuration list for PBXProject "MyTextInput" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B9CE882222D693900815998;
+			productRefGroup = 9B9CE88C222D693900815998 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B9CE88A222D693900815998 /* MyTextInput */,
+				9B9CE89C222D693F00815998 /* MyTextInput WatchKit App */,
+				9B9CE8AB222D694000815998 /* MyTextInput WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B9CE889222D693900815998 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B9CE899222D693F00815998 /* LaunchScreen.storyboard in Resources */,
+				9B9CE896222D693F00815998 /* Assets.xcassets in Resources */,
+				9B9CE894222D693900815998 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9CE89B222D693F00815998 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B9CE8A6222D694000815998 /* Assets.xcassets in Resources */,
+				9B9CE8A4222D694000815998 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9CE8AA222D694000815998 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B9CE8B6222D694000815998 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B9CE887222D693900815998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B9CE891222D693900815998 /* ViewController.swift in Sources */,
+				9B9CE88F222D693900815998 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9CE8A8222D694000815998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B9CE8B4222D694000815998 /* ExtensionDelegate.swift in Sources */,
+				9B9CE8B2222D694000815998 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B9CE8A0222D694000815998 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B9CE89C222D693F00815998 /* MyTextInput WatchKit App */;
+			targetProxy = 9B9CE89F222D694000815998 /* PBXContainerItemProxy */;
+		};
+		9B9CE8AF222D694000815998 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B9CE8AB222D694000815998 /* MyTextInput WatchKit Extension */;
+			targetProxy = 9B9CE8AE222D694000815998 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9B9CE892222D693900815998 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B9CE893222D693900815998 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B9CE897222D693F00815998 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B9CE898222D693F00815998 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9B9CE8A2222D694000815998 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B9CE8A3222D694000815998 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B9CE8B8222D694100815998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9B9CE8B9222D694100815998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B9CE8BB222D694100815998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MyTextInput WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CestarCollege.MyTextInput.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		9B9CE8BC222D694100815998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MyTextInput WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CestarCollege.MyTextInput.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		9B9CE8BF222D694100815998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = MyTextInput_WatchKit_Extension;
+				INFOPLIST_FILE = "MyTextInput WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = CestarCollege.MyTextInput.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		9B9CE8C0222D694100815998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = MyTextInput_WatchKit_Extension;
+				INFOPLIST_FILE = "MyTextInput WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = CestarCollege.MyTextInput.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		9B9CE8C3222D694100815998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyTextInput/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CestarCollege.MyTextInput;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B9CE8C4222D694100815998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyTextInput/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CestarCollege.MyTextInput;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B9CE886222D693900815998 /* Build configuration list for PBXProject "MyTextInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B9CE8B8222D694100815998 /* Debug */,
+				9B9CE8B9222D694100815998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B9CE8BA222D694100815998 /* Build configuration list for PBXNativeTarget "MyTextInput WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B9CE8BB222D694100815998 /* Debug */,
+				9B9CE8BC222D694100815998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B9CE8BE222D694100815998 /* Build configuration list for PBXNativeTarget "MyTextInput WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B9CE8BF222D694100815998 /* Debug */,
+				9B9CE8C0222D694100815998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B9CE8C2222D694100815998 /* Build configuration list for PBXNativeTarget "MyTextInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B9CE8C3222D694100815998 /* Debug */,
+				9B9CE8C4222D694100815998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B9CE883222D693900815998 /* Project object */;
+}
